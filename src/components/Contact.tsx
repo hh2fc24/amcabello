@@ -69,6 +69,15 @@ export default function Contact() {
               <p className="mt-2 text-sm leading-6 text-slate-700">
                 {content.brand.location}
               </p>
+              <p className="mt-2 text-sm leading-6 text-slate-700">
+                Email:{" "}
+                <a
+                  href={content.links.email.href}
+                  className="font-semibold text-blue-700 hover:text-blue-800 focus:outline-none focus-visible:rounded-md focus-visible:ring-2 focus-visible:ring-blue-600/30"
+                >
+                  {content.links.email.label}
+                </a>
+              </p>
 
               <div className="mt-5">
                 <a
