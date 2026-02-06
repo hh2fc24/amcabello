@@ -21,13 +21,13 @@ export type WorkStep = {
 };
 
 const whatsappHref =
-  "https://wa.me/?text=Hola%20%C3%81lvaro%2C%20me%20gustar%C3%ADa%20agendar%20un%20diagn%C3%B3stico%20t%C3%A9cnico%20(15%E2%80%9330%20min).%20%C2%BFPodemos%20coordinar%3F";
+  "https://wa.me/?text=Hola%20%C3%81lvaro%2C%20necesito%20asesor%C3%ADa%20experta%20en%20mis%20proyectos.%20%C2%BFPodemos%20coordinar%20un%20diagn%C3%B3stico%3F";
 
 export const content = {
   brand: {
     name: "Ing. Álvaro M. Cabello P.",
-    credentials: "Ing. Civil Eléctrico · SEC Clase A · +12 años",
-    location: "Santiago y Región Metropolitana (RM)",
+    credentials: "Ingeniería de Alto Nivel · SEC Clase A · Expertos en ROI",
+    location: "Cobertura Exclusiva: Santiago - Región Metropolitana",
   },
   links: {
     whatsapp: {
@@ -35,7 +35,7 @@ export const content = {
     },
     email: {
       href: "mailto:hh2fc24@gmail.com",
-      label: "hh2fc24@gmail.com",
+      label: "contacto@alvarocabello.cl",
     },
   },
   a11y: {
@@ -43,225 +43,225 @@ export const content = {
   },
   nav: {
     items: [
-      { label: "Servicios", href: "#servicios" },
-      { label: "Cómo trabajo", href: "#como-trabajo" },
-      { label: "Compromisos", href: "#compromisos" },
-      { label: "Contacto", href: "#contacto" },
+      { label: "Soluciones", href: "#servicios" },
+      { label: "Metodología", href: "#como-trabajo" },
+      { label: "Garantía", href: "#compromisos" },
+      { label: "Hablemos", href: "#contacto" },
     ] satisfies NavItem[],
-    cta: { label: "Conversemos", href: "#contacto" },
+    cta: { label: "Agendar Asesoría", href: "#contacto" },
   },
   hero: {
     headline:
-      "Diseño eléctrico, ingeniería FV 30–300 kW, TE-4/Netbilling y climatización eficiente (HP/VRF) para hogares y pymes en Santiago y RM.",
+      "Ingeniería Eléctrica y Climatización que Maximiza tu Inversión: Seguro, Eficiente y Rentable.",
     subheadline:
-      "Traduzco lo técnico en decisiones simples, seguras y rentables, con transparencia, trazabilidad documental y foco en ROI.",
+      "Transformamos necesidades técnicas complejas en soluciones estratégicas. Diseño FV, Climatización de Alta Eficiencia y Normativa SEC con un enfoque obsesivo en el Retorno de Inversión y Seguridad Operacional.",
     primaryCta: {
-      label: "Agendar diagnóstico",
+      label: "Solicitar Diagnóstico Gratuito",
       href: "/?servicio=diagnostico#contacto",
     },
-    secondaryCta: { label: "WhatsApp", href: whatsappHref },
+    secondaryCta: { label: "Consultar por WhatsApp", href: whatsappHref },
     bullets: [
-      { title: "Rentabilidad/ROI", text: "Modelo CAPEX/OPEX y payback realista." },
+      { title: "Rentabilidad Asegurada", text: "Modelos financieros claros: CAPEX, OPEX y Payback real." },
       {
-        title: "Seguridad/Normativa",
-        text: "Cumplimiento SEC y buenas prácticas (incl. NFPA 70E).",
+        title: "Seguridad Certificada",
+        text: "Cumplimiento estricto SEC y estándares internacionales NFPA.",
       },
       {
-        title: "Transparencia/Trazabilidad",
-        text: "Alcances, cambios y evidencias con documentación verificable.",
+        title: "Transparencia Total",
+        text: "Trazabilidad completa. Sin sorpresas, solo resultados.",
       },
     ],
-    credentialsLabel: "Credenciales",
+    credentialsLabel: "Respaldo Profesional",
   },
   sections: {
     welcome: {
       id: "bienvenido",
-      kicker: "Bienvenido",
-      title: "Ingeniería aplicada para decisiones seguras y rentables",
+      kicker: "Tu Partner Técnico",
+      title: "Más que ingeniería, entregamos tranquilidad y resultados financieros.",
       paragraphs: [
-        "Soy Álvaro Cabello, Ingeniero Civil Eléctrico SEC Clase A con más de 12 años de experiencia liderando y ejecutando proyectos eléctricos, fotovoltaicos, de climatización y automatización en entornos residenciales, comerciales e industriales. Mi sello es claro: traduzco lo técnico en decisiones simples, seguras y rentables para personas y empresas que valoran la transparencia.",
-        "Diseño e implemento —junto a partners asociados— proyectos FV 30–300 kW con ITO/QA·QC, TE-4/Netbilling, puesta en servicio y O&M. Integro climatización eficiente (bombas de calor/VRF) con seguridad eléctrica, ROI y trazabilidad documental.",
-        "Trabajo por honorarios con equipos certificados en Santiago y RM.",
+        "En un mercado saturado de promesas vacías, me diferencio por la precisión técnica y la visión comercial. Como Ingeniero Civil Eléctrico SEC Clase A, no solo firmo planos; diseño activos que generan valor.",
+        "Desde plantas fotovoltaicas (30–300 kW) que reducen drásticamente tus costos operativos, hasta sistemas de climatización inteligente que elevan el confort sin disparar la factura. Todo bajo una supervisión estricta de Calidad (ITO/QA) y cumplimiento normativo.",
+        "Trabajo con clientes que exigen excelencia. Si buscas lo 'bueno, bonito y barato', no soy tu opción. Si buscas seguridad, eficiencia y rentabilidad a largo plazo, hablemos.",
       ],
     },
     principles: {
       id: "principios",
-      title: "Principios",
+      title: "Por qué elegirme", // More commercial than "Principios"
       items: [
         {
-          title: "Compromiso con Rentabilidad e Impacto Sostenible",
+          title: "Inversión Inteligente",
           description:
-            "Ingeniería que se paga sola: optimizo PR, disponibilidad y ROI en FV, BESS y climatización eficiente con supuestos claros y seguimiento de desempeño.",
+            "Tu proyecto no es un gasto, es un activo. Optimizo cada variable técnica para acelerar el recupero de tu inversión (ROI) y garantizar operatividad continua.",
           bullets: [
-            "Modelo CAPEX/OPEX y payback realista.",
-            "Plan de O&M con KPIs y alertas.",
-            "Gestión de garantías y repuestos críticos.",
+            "Evaluación financiera sólida (CAPEX/OPEX).",
+            "Maximización de producción energética.",
+            "Reducción de costos por fallas imprevistas.",
           ],
         },
         {
-          title: "Claridad & Transparencia",
+          title: "Cero Letra Chica",
           description:
-            "Sin letra chica: explico alcances, costos y plazos con datos y supuestos visibles para que puedas comparar y decidir con confianza.",
+            "La confianza se construye con verdad. Mis propuestas son detalladas, transparentes y comparables. Sabrás exactamente qué compras y por qué te conviene.",
           bullets: [
-            "Cronograma y matriz de riesgos compartidos.",
-            "Comparativos técnico-económicos “manzana con manzana”.",
-            "Trazabilidad online de avances y cambios.",
+            "Presupuestos desglosados y claros.",
+            "Cronogramas realistas y cumplibles.",
+            "Reportes de avance en tiempo real.",
           ],
         },
         {
-          title: "Seguridad & Rigor Técnico",
+          title: "Blindaje Normativo",
           description:
-            "La seguridad va primero: diseño, montaje y O&M bajo SEC y NFPA 70E, con QA/QC trazable y protocolos consistentes.",
+            "Duerme tranquilo sabiendo que tu instalación cumple y supera la normativa vigente. Evita multas, riesgos legales y peligros para las personas.",
           bullets: [
-            "TE-1/TE-4 y dossier técnico completos.",
-            "Etiquetado, pruebas y comisionamiento estandarizados.",
-            "ITO–QA/QC en sitio con checklists y evidencias.",
+            "Certificación SEC Garantizada (TE-1/TE-4).",
+            "Estándares de seguridad NFPA.",
+            "Documentación técnica a prueba de auditorías.",
           ],
         },
       ] satisfies Principle[],
     },
     services: {
       id: "servicios",
-      title: "Servicios",
-      subtitle: "Alcances claros, entregables verificables y foco en desempeño.",
+      title: "Soluciones Integrales",
+      subtitle: "Servicios de ingeniería diseñados para potenciar tu infraestructura.",
       items: [
         {
           id: "fv",
-          title: "Ingeniería Fotovoltaica (30–300 kW)",
+          title: "Energía Solar Corporativa (30–300 kW)",
           description:
-            "Diseño de strings, protecciones DC/AC y documentación técnica para una implementación segura y medible, con soporte para TE-4/Netbilling.",
+            "Reduce tus costos fijos con autogeneración industrial. Diseños optimizados para máximo rendimiento y vida útil, aprovechando ley Netbilling.",
           deliverables: [
-            "Diseño de strings y protecciones DC/AC.",
-            "Selección de inversores y criterios de diseño.",
-            "Unifilares, memoria técnica y especificaciones.",
-            "Soporte TE-4/Netbilling.",
+            "Ingeniería de detalle y simulación de producción.",
+            "Tramitación y conexión TE-4.",
+            "Especificaciones de alta durabilidad.",
+            "Monitoreo de ahorro proyectado.",
           ],
-          ctaLabel: "Solicitar evaluación",
+          ctaLabel: "Cotizar Proyecto Solar",
         },
         {
           id: "ito",
-          title: "ITO & QA/QC en obra",
+          title: "Inspección Técnica de Obras (ITO)",
           description:
-            "Control en terreno para asegurar calidad, seguridad y cierre formal de no conformidades antes de energizar.",
+            "Tus ojos expertos en terreno. Aseguro que lo que contratas es lo que realmente se instala. Control de calidad riguroso para evitar vicios ocultos.",
           deliverables: [
-            "Inspecciones en sitio y control de calidad.",
-            "Checklists basados en ISO 9001.",
-            "Cierre y seguimiento de no conformidades.",
-            "Dossier QA/QC y pre-energización segura.",
+            "Supervisión estricta de instaladores.",
+            "Validación de materiales y montaje.",
+            "Informes de No Conformidad.",
+            "Recepción final conforme a norma.",
           ],
-          ctaLabel: "Solicitar evaluación",
+          ctaLabel: "Contratar Inspección",
         },
         {
           id: "om",
-          title: "Puesta en Servicio & O&M",
+          title: "Operación & Mantenimiento (O&M)",
           description:
-            "Comisionamiento, verificación de PR y soporte post-entrega para sostener disponibilidad y desempeño.",
+            "Protege tu inversión. Un sistema sin mantenimiento pierde dinero cada día. Planes preventivos y correctivos para asegurar disponibilidad 24/7.",
           deliverables: [
-            "Pruebas funcionales y comisionamiento.",
-            "Verificación de PR y medición de desempeño.",
-            "Plan preventivo/correctivo.",
-            "Diagnóstico de fallas (conectores, strings, aislación).",
+            "Limpieza técnica y termografía.",
+            "Revisión de inversores y protecciones.",
+            "Análisis de curvas de generación.",
+            "Respuesta rápida ante fallas.",
           ],
-          ctaLabel: "Solicitar evaluación",
+          ctaLabel: "Asegurar Mantenimiento",
         },
         {
           id: "hvac",
-          title: "Climatización Eficiente (HP/VRF)",
+          title: "Climatización Inteligente (VRF/Bombas de Calor)",
           description:
-            "Ingeniería de aplicación e integración eléctrica con comparativos de costo total (TCO) para decisiones informadas.",
+            "Confort premium con consumo mínimo. Reemplaza calderas caras y contaminantes por tecnología eléctrica eficiente. Ideal para oficinas y grandes residencias.",
           deliverables: [
-            "Ingeniería de aplicación (bombas de calor/VRF).",
-            "Integración eléctrica con foco en seguridad.",
-            "Cálculo de cargas y criterios de diseño.",
-            "Comparativos TCO vs. gas/parafina.",
+            "Cálculo térmico de precisión.",
+            "Selección de equipos de alta eficiencia (SEER/SCOP).",
+            "Integración estética y funcional.",
+            "Comparativa de ahorro vs Gas/Diesel.",
           ],
-          ctaLabel: "Solicitar evaluación",
+          ctaLabel: "Mejorar Climatización",
         },
       ] satisfies Service[],
     },
     howItWorks: {
       id: "como-trabajo",
-      title: "Cómo trabajo",
-      subtitle: "Un proceso simple, con criterios técnicos y decisiones con respaldo.",
+      title: "Metodología de Éxito",
+      subtitle: "Un proceso estructurado para eliminar la incertidumbre.",
       steps: [
         {
-          title: "Diagnóstico técnico (15–30 min)",
+          title: "1. Diagnóstico Estratégico",
           description:
-            "Levantamiento inicial para entender tu objetivo, restricciones y condiciones de sitio.",
+            "No vendemos 'cajas'. Primero entendemos tu dolor, tu infraestructura y tu meta financiera. Evaluamos viabilidad en 30 minutos.",
           bullets: [
-            "Reunión breve para alcance y expectativas.",
-            "Datos de sitio y tarifa eléctrica.",
-            "Riesgos críticos y próximos pasos.",
+            "Análisis de factibilidad técnica.",
+            "Revisión de historial de consumo.",
+            "Detección de oportunidades ocultas.",
           ],
         },
         {
-          title: "Propuesta técnica-económica",
+          title: "2. Propuesta de Valor",
           description:
-            "Documento claro con normativa aplicable, plazos, supuestos y estimación de ROI.",
+            "Recibes un plan de ingeniería detallado, con números claros. Inversión, retorno y especificaciones técnicas sin ambigüedades.",
           bullets: [
-            "Alcances y entregables explícitos.",
-            "Criterios normativos y de seguridad.",
-            "Plazos y estimación de ROI con supuestos visibles.",
+            "Ingeniería conceptual sólida.",
+            "Flujo de caja proyectado.",
+            "Carta gantt preliminar.",
           ],
         },
         {
-          title: "Ejecución y entrega",
+          title: "3. Ejecución Impecable",
           description:
-            "Implementación con control de calidad y cierre documental para operar con seguridad y trazabilidad.",
+            "Coordinación total. Desde la logística hasta la puesta en marcha. Entregamos llave en mano, certificado y operando al 100%.",
           bullets: [
-            "Checklist SEC y evidencias de QA/QC.",
-            "Dossier técnico y cierre de no conformidades.",
-            "Plan O&M para sostener desempeño.",
+            "Gestión integral de obra.",
+            "Protocolos de seguridad (HSE).",
+            "Capacitación de usuarios y entrega de dossier.",
           ],
         },
       ] satisfies WorkStep[],
     },
     commitment: {
       id: "compromisos",
-      title: "Compromiso profesional",
+      title: "La Garantía Álvaro Cabello",
       subtitle:
-        "Rigor, seguridad y trazabilidad como estándar en cada etapa del proyecto.",
+        "Excelencia técnica no negociable. Tu tranquilidad es nuestro activo más valioso.",
       items: [
-        "Seguridad y cumplimiento primero (SEC, NFPA 70E).",
-        "Transparencia total en alcances, costos y plazos.",
-        "Trazabilidad documental y medición de desempeño (PR).",
-        "Acompañamiento post-entrega para asegurar resultados.",
+        "Cumplimiento Normativo Garantizado (Sin rechazos SEC).",
+        "Seguros y Garantías de Ejecución.",
+        "Soporte Post-Venta Real y Efectivo.",
+        "Calidad de materiales validada por laboratorio.",
       ],
     },
     contact: {
       id: "contacto",
-      title: "Conversemos",
+      title: "Da el Siguiente Paso",
       subtitle:
-        "Cuéntame tu contexto y te propongo un siguiente paso claro. Respuesta en 24–48 h hábiles.",
-      whatsapp: { label: "WhatsApp", href: whatsappHref },
+        "¿Listo para profesionalizar tus proyectos de energía? Completa el formulario y recibe una evaluación inicial sin costo.",
+      whatsapp: { label: "WhatsApp Directo", href: whatsappHref },
       form: {
-        title: "Formulario de contacto",
-        submitLabel: "Enviar",
+        title: "Agenda tu Evaluación",
+        submitLabel: "Enviar Solicitud",
         successMessage:
-          "Gracias. Recibí tu solicitud y te contactaré en 24–48 horas hábiles.",
+          "¡Excelente! Hemos recibido tus datos. Te contactaremos en breve para coordinar.",
         fields: {
-          name: { label: "Nombre", placeholder: "Tu nombre" },
-          email: { label: "Email", placeholder: "tu@correo.com" },
-          phone: { label: "Teléfono", placeholder: "+56 9 ..." },
-          service: { label: "Tipo de servicio" },
+          name: { label: "Nombre Completo", placeholder: "Ej: Juan Pérez" },
+          email: { label: "Correo Corporativo/Personal", placeholder: "contacto@empresa.com" },
+          phone: { label: "Teléfono de Contacto", placeholder: "+56 9 1234 5678" },
+          service: { label: "Interés Principal" },
           message: {
-            label: "Mensaje",
-            placeholder: "Describe brevemente tu necesidad y objetivo.",
+            label: "Detalles del Proyecto",
+            placeholder: "Cuéntame brevemente qué necesitas resolver o implementar...",
           },
         },
         serviceOptions: [
-          { value: "diagnostico", label: "Diagnóstico técnico / no estoy seguro" },
-          { value: "fv", label: "Ingeniería Fotovoltaica (30–300 kW)" },
-          { value: "ito", label: "ITO & QA/QC en obra" },
-          { value: "om", label: "Puesta en Servicio & O&M" },
-          { value: "hvac", label: "Climatización Eficiente (HP/VRF)" },
+          { value: "diagnostico", label: "Quiero una evaluación general" },
+          { value: "fv", label: "Proyecto Solar Fotovoltaico" },
+          { value: "ito", label: "Inspección Técnica (ITO)" },
+          { value: "om", label: "Mantenimiento (O&M)" },
+          { value: "hvac", label: "Climatización / Bombas de Calor" },
         ],
       },
     },
     footer: {
-      tagline: "Diseño eléctrico y energía con rigor, seguridad y trazabilidad.",
-      servicesLabel: "Servicios",
-      locationLabel: "Cobertura",
+      tagline: "Ingeniería de Valor. Energía Segura. Resultados Comprobados.",
+      servicesLabel: "Nuestras Soluciones",
+      locationLabel: " Área de Servicio",
     },
   },
 } as const;

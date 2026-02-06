@@ -7,6 +7,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { content } from "../lib/content";
+import Image from "next/image";
 
 const serviceIcons: Record<
   string,
@@ -18,68 +19,85 @@ const serviceIcons: Record<
   hvac: ThermometerSnowflake,
 };
 
+const serviceImages: Record<string, string> = {
+  fv: "/images/service_solar_pv_1770413679520.png",
+  ito: "/images/service_ito_qa_1770413694596.png",
+  om: "/images/service_om_maintenance_1770413709305.png",
+  hvac: "/images/service_hvac_heatpump_1770413723611.png",
+};
+
 export default function Services() {
   return (
     <section
       id={content.sections.services.id}
-      className="reveal scroll-mt-24 border-t border-slate-200/70 bg-slate-50 py-16 sm:py-20"
+      className="reveal scroll-mt-24 border-t border-slate-200/70 bg-slate-50/50 py-16 sm:py-24"
     >
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             {content.sections.services.title}
           </h2>
-          <p className="mt-3 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          <p className="mt-4 text-lg leading-8 text-slate-600">
             {content.sections.services.subtitle}
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-2">
+        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:gap-10">
           {content.sections.services.items.map((service) => {
             const Icon = serviceIcons[service.id] ?? Wrench;
+            const bgImage = serviceImages[service.id];
             const href = `/?servicio=${encodeURIComponent(service.id)}#${content.sections.contact.id}`;
+
             return (
               <div
                 key={service.id}
-                className="group rounded-3xl border border-slate-200/70 bg-white p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+                className="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all hover:shadow-xl hover:-translate-y-1"
               >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex items-start gap-3">
-                    <span className="mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-white text-blue-700 ring-1 ring-slate-200">
-                      <Icon className="h-5 w-5" aria-hidden={true} />
+                {/* Image Header */}
+                <div className="relative h-48 w-full overflow-hidden bg-slate-100 sm:h-56">
+                  {bgImage && (
+                    <Image
+                      src={bgImage}
+                      alt={service.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      quality={85}
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                  <div className="absolute bottom-4 left-6 flex items-center gap-3">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/90 shadow-sm backdrop-blur-md">
+                      <Icon className="h-5 w-5 text-blue-700" />
                     </span>
-                    <div>
-                      <h3 className="text-base font-semibold leading-6 text-slate-900">
-                        {service.title}
-                      </h3>
-                      <p className="mt-2 text-sm leading-6 text-slate-700">
-                        {service.description}
-                      </p>
-                    </div>
+                    <h3 className="text-xl font-bold text-white shadow-sm">
+                      {service.title}
+                    </h3>
                   </div>
                 </div>
 
-                <ul className="mt-5 space-y-2 text-sm text-slate-700">
-                  {service.deliverables.map((deliverable) => (
-                    <li key={deliverable} className="flex gap-2">
-                      <span
-                        aria-hidden="true"
-                        className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-600"
-                      />
-                      <span className="leading-6">{deliverable}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="flex flex-1 flex-col p-6 sm:p-8">
+                  <p className="text-base leading-relaxed text-slate-600">
+                    {service.description}
+                  </p>
 
-                <div className="mt-6">
-                  <a
-                    href={href}
-                    className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition-all hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600/30 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                    aria-label={`${service.ctaLabel}: ${service.title}`}
-                  >
-                    {service.ctaLabel}
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                  </a>
+                  <ul className="mt-6 flex-1 space-y-3">
+                    {service.deliverables.map((deliverable) => (
+                      <li key={deliverable} className="flex items-start gap-3 text-sm text-slate-700">
+                        <div className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                        <span>{deliverable}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-8 pt-6 border-t border-slate-100">
+                    <a
+                      href={href}
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+                    >
+                      {service.ctaLabel}
+                      <ArrowRight className="h-4 w-4" />
+                    </a>
+                  </div>
                 </div>
               </div>
             );
